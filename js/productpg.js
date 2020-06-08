@@ -1,3 +1,17 @@
+//movingImage on homepage
+var i = 0;
+var txt = 'For all your scaly, slippery friends';
+var speed = 50;
+
+function typeWriter() {
+    if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}
+
+
 //add product to cart
 function addProductToCart(buttonID) {
     cart = document.getElementById("rightDiv");
@@ -34,6 +48,34 @@ function addProductToCart(buttonID) {
             console.log(addHTML);
             cart.insertBefore(addHTML, document.getElementById("checkOut"));
             break;
+
+        case "addBird":
+            qty = document.getElementById("birdQty").value;
+            addHTML = document.createElement("p");
+            addHTML.className="orderedProducts";
+            addHTML.innerHTML = "Bird: "+qty+" Price: <strong class='price'>"+(50.00*Number(qty)) +"</strong>";
+            console.log(addHTML);
+            cart.insertBefore(addHTML, document.getElementById("checkOut"));
+            break;
+
+        case "addEgg":
+            qty = document.getElementById("eggQty").value;
+            addHTML = document.createElement("p");
+            addHTML.className="orderedProducts";
+            addHTML.innerHTML = "Egg: "+qty+" Price: <strong class='price'>"+(16.60*Number(qty)) +"</strong>";
+            console.log(addHTML);
+            cart.insertBefore(addHTML, document.getElementById("checkOut"));
+            break;
+
+        case "addFish":
+            qty = document.getElementById("fishQty").value;
+            addHTML = document.createElement("p");
+            addHTML.className="orderedProducts";
+            addHTML.innerHTML = "Fish: "+qty+" Price: <strong class='price'>"+(30.00*Number(qty)) +"</strong>";
+            console.log(addHTML);
+            cart.insertBefore(addHTML, document.getElementById("checkOut"));
+            break;
+
     }
 }
 
