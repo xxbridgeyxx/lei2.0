@@ -1,52 +1,49 @@
+/*Main Body*/
 * {
     margin: 2px;
     padding: 2px;
 
 }
 
-html,body{
+html, body {
     height: 100%;
 }
 
-body{
-    background: rgb(34,193,195);
-    background-image: linear-gradient(to left bottom, #37609f, #30679e, #2f6e9b, #367396, #417892, #46849b, #4c8fa3, #549bab, #54b2c0, #54cad3, #57e2e3, #5ffbf1);    font-family: "arial";
+body {
+    background: rgb(34, 193, 195);
+    background-image: linear-gradient(to left bottom, #37609f, #30679e, #2f6e9b, #367396, #417892, #46849b, #4c8fa3, #549bab, #54b2c0, #54cad3, #57e2e3, #5ffbf1);
+    font-family: "arial";
     color: #817056;
 }
 
-#titleH1{
-    color: rgba(2,10,43,0.82);
+/*headings*/
+#titleH1 {
+    color: rgba(2, 10, 43, 0.82);
     font-style: unset;
     font-size: 50px;
     align-content: center;
     font-weight: lighter;
 }
 
-#leftDiv{
-    width: 800px;
-    height: 500px;
-    overflow: hidden;
-}
-
-#leftDiv img{
-    height:500px;
-    position:relative;
-    z-index:-1;
-}
-
-h3{
+h3 {
     color: #00a698;
 
 }
-h1{
-    font-size: 150px;
+
+h1 {
+    font-size: 130px;
     display: inline-block;
-    width:500px;
+    width: 500px;
     margin: 0 auto;
     text-align: center;
+    font-family: Skia;
+}
+p {
+    color: black;
 }
 
-#homepageDiv{
+/*main divs*/
+#homepageDiv {
     margin: auto;
     width: 77%;
     height: 100vh;
@@ -54,15 +51,48 @@ h1{
     border-bottom: 1px;
 }
 
-p{
-    color: black;
+#rightDiv {
+    width: 200px;
+    align-content: center;
+    position: revert;
+    background: #333634;
+}
+#main-content {
+    visibility: visible;
+    margin: auto;
+    width: 60%;
+    height: 100vh;
+    background: linear-gradient(-70deg, #fa7c30 30%, rgba(0, 0, 0, 0) 30%), url('flyfish.jpg');    border-top: 1px;
+    border-bottom: 1px;
 }
 
-.circle{
-    font-size: 100px;
+#box-one-about {
+    height: 300px;
+    width: 200px;
+    border-width: 10px;
+    position: center;
 }
 
-nav{
+#box-two-about {
+    height: 300px;
+    width: 200px;
+    border-width: 40px;
+    position: relative;
+}
+
+#products div {
+    width: 100%;
+    height: 80%;
+    border-style: solid;
+    position: center;
+    align-items: baseline;
+    min-height: max-content;
+    color: #dddddd;
+
+}
+
+/*navigation area*/
+nav {
     justify-content: space-around;
     min-height: 8vh;
     font-family: Arial;
@@ -72,16 +102,14 @@ nav{
     background-color: #333333;
 }
 
-nav div{
+nav div {
     display: inline-block;
     margin-top: 15px;
     border-style: solid;
     border-width: 2px;
-
-
 }
 
-.logo{
+.logo {
     letter-spacing: 30px;
     font-size: 40px;
     float: left;
@@ -90,42 +118,91 @@ nav div{
     font-weight: bolder;
 }
 
-.navLinks{
-    background-color: rgba(8,82,89,0.82);
+.navLinks {
+    background-color: rgba(8, 82, 89, 0.82);
     display: flex;
     justify-content: space-around;
     font-size: 10px;
     float: right;
 }
 
-.navLinks li{
+.redirectButton {
+    background-color:rgba(8, 82, 89, 0.82);
+
+}
+
+.navLinks li {
     list-style: none;
     color: #333333;
 }
-.navLinks a{
+
+.navLinks a {
     text-decoration: none;
     letter-spacing: 3px;
 }
 
-.navLinks a:hover{
+.navLinks a:hover {
     background-color: pink;
     width: 40px;
     cursor: pointer;
 
 }
 
-.categoryTable{
+.categoryTable {
     position: marker;
     border-style: solid;
 }
+/*dropdown products*/
+.dropbtn {
+    background-color: ghostwhite;
+    color: white;
+    padding: 5px;
+    font-size: 10px;
+    border: none;
+    text-align: right;
+}
 
+.dropdown {
+    display: inline-block;
+    position:absolute;
+    right:70px;
+    top  :1px;
+}
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/*products*/
 .product {
     position: relative;
     width: 22.5%;
     display: inline-block;
 }
-
 
 
 .image {
@@ -137,7 +214,7 @@ nav div{
 .middleProduct {
     height: 100px;
     position: relative;
-    top:-100px;
+    top: -100px;
     text-align: center;
     display: none;
 }
@@ -151,33 +228,6 @@ nav div{
 
 .containerOne:hover .product {
     opacity: 0.7;
-}
-
-
-
-#main-content{
-    visibility: visible;
-    margin: auto;
-    width: 77%;
-    border-style: solid;
-    height: 100vh;
-    background-color: #817056;
-    border-top: 1px;
-    border-bottom: 1px;
-}
-
-#box-one-about{
-    height: 300px;
-    width: 200px;
-    border-width: 10px;
-    position: center;
-}
-
-#box-two-about{
-    height: 300px;
-    width: 200px;
-    border-width: 40px;
-    position: relative;
 }
 
 /* Footer */
@@ -197,34 +247,13 @@ nav div{
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
     .topnav a {
         float: none;
         width: 100%;
     }
 }
 
-#products div{
-    width: 100%;
-    height: 80%;
-    border-style: solid;
-    position: center;
-    align-items: baseline;
-    min-height: max-content;
-    color: #dddddd;
-
-}
-.redirectButton{
-    background-color: deepskyblue;
-
-}
-
-#rightDiv{
-    width: 200px;
-    align-content: center;
-    position: revert;
-    background: #333634;
-}
 
 /* The Modal (background) */
 .modal {
@@ -236,8 +265,8 @@ nav div{
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
