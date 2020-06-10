@@ -13,7 +13,7 @@ body {
     background: rgb(34, 193, 195);
     background-image: linear-gradient(to left bottom, #37609f, #30679e, #2f6e9b, #367396, #417892, #46849b, #4c8fa3, #549bab, #54b2c0, #54cad3, #57e2e3, #5ffbf1);
     font-family: "arial";
-    color: #817056;
+    color: rgba(23,110,107,0.89);
 }
 
 /*headings*/
@@ -62,7 +62,7 @@ p {
     margin: auto;
     width: 60%;
     height: 100vh;
-    background: linear-gradient(-70deg, #fa7c30 30%, rgba(0, 0, 0, 0) 30%), url('flyfish.jpg');    border-top: 1px;
+    background: linear-gradient(-70deg, #fa7c30 30%, rgba(0, 0, 0, 0) 30%), url('');    border-top: 1px;
     border-bottom: 1px;
 }
 
@@ -120,10 +120,14 @@ nav div {
 
 .navLinks {
     background-color: rgba(8, 82, 89, 0.82);
-    display: flex;
-    justify-content: space-around;
     font-size: 10px;
     float: right;
+    display: block;
+    list-style-type: none;
+    position:absolute;
+    right:400px;
+    top:1px;
+
 }
 
 .redirectButton {
