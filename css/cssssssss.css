@@ -62,7 +62,7 @@ p {
     margin: auto;
     width: 60%;
     height: 100vh;
-    background: linear-gradient(-70deg, #fa7c30 30%, rgba(0, 0, 0, 0) 30%), url('');    border-top: 1px;
+    background: linear-gradient(-70deg, #fa7c30 30%, rgba(0, 0, 0, 0) 30%), url('');
     border-bottom: 1px;
 }
 
@@ -131,9 +131,7 @@ nav div {
 }
 
 .redirectButton {
-    background-color:rgba(8, 82, 89, 0.82);
-
-}
+    background-color:rgba(8, 82, 89, 0.82);}
 
 .navLinks li {
     list-style: none;
