@@ -2,24 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Select</title>
+    <title>Product Selection</title>
     <link rel="stylesheet" href="../css/cssssssss.css">
 </head>
 <body>
-<div id="categoryTable">
-    <table id="products">
+<nav id="navigation">
+    <div class="logo">
+        WETLANDS
+    </div>
+    <div>
+        <ul class="navLinks">
+            <li>
+                <a href="HOMEPAGE.html">Home</a>
+            </li>
+            <li>
+                <a href="ABOUTUS.html">About Us</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <a href="productselection.html">Product Selection</a>
+            </li>
+        </ul>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn"><img src="../images/drpdwn.png" height="25" width="25"/></button>
+        <div class="dropdown-content">
+            <a href="lizardpage.html">Lizard button</a>
+            <a href="snakepage.html">Snake button</a>
+            <a href="reptilepage.html">Frog button</a>
+            <a href="fishpage.html">Fish button</a>
+        </div>
+        <img src="../images/cart.png" height="25" width="25"/>
+    </div>
 
-        <tr>
-            <td><a href="lizardpage.html"><button class="redirectButton">Lizard button</button></a></td>
+</nav>
 
-            <td><a href="snakepage.html"><button class="redirectButton">Snake button</button></a></td>
+<main id="main-content">
+    <button class="lizard"><a href="lizardpage.html"><img src="../images/gecko-30024_1280.png" height="50" width="50"/></a> </button>
+    <button class="snake"><a href="snakepage.html"><img src="../images/snake-306109_1280.png" height="50" width="50"/></a></button>
+    <button class="frog"><a href="reptilepage.html"><img src="../images/frog-310357_1280.png" height="50" width="50"/></a></button>
+    <button class="fish"><a href="fishpage.html"><img src="../images/Machovka_Happy_fish.png" height="50" width="50"/></a></button>
 
-            <td><a href="reptilepage.html"><button class="redirectButton">Reptile button</button></a></td>
-
-            <td><a href="fishpage.html"><button class="redirectButton">Fish button</button></a></td>
-        </tr>
-    </table>
-</div>
-
+</main>
+<footer class="footer">
+    <h2>&copy; Unitec Instiute of Technology</h2>
+</footer>
 </body>
 </html>

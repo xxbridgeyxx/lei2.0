@@ -76,6 +76,15 @@ function addProductToCart(buttonID) {
             cart.insertBefore(addHTML, document.getElementById("checkOut"));
             break;
 
+        case "addMouse":
+            qty = document.getElementById("mouseQty").value;
+            addHTML = document.createElement("p");
+            addHTML.className="orderedProducts";
+            addHTML.innerHTML = "Fish: "+qty+" Price: <strong class='price'>"+(30.00*Number(qty)) +"</strong>";
+            console.log(addHTML);
+            cart.insertBefore(addHTML, document.getElementById("checkOut"));
+            break;
+
     }
 }
 //Popup Invoice
@@ -112,6 +121,9 @@ function invoice() {
         text += "<p>"+items[i].innerHTML+"</p>";
         i++;
     }
+
+    //plus minus button
+
 
     //calculate total
     total = 0;
