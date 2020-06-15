@@ -80,7 +80,43 @@ function addProductToCart(buttonID) {
             qty = document.getElementById("mouseQty").value;
             addHTML = document.createElement("p");
             addHTML.className="orderedProducts";
-            addHTML.innerHTML = "Fish: "+qty+" Price: <strong class='price'>"+(30.00*Number(qty)) +"</strong>";
+            addHTML.innerHTML = "Mouse: "+qty+" Price: <strong class='price'>"+(30.00*Number(qty)) +"</strong>";
+            console.log(addHTML);
+            cart.insertBefore(addHTML, document.getElementById("checkOut"));
+            break;
+
+        case "addFlies":
+            qty = document.getElementById("flyQty").value;
+            addHTML = document.createElement("p");
+            addHTML.className="orderedProducts";
+            addHTML.innerHTML = "Flies: "+qty+" Price: <strong class='price'>"+(50.00*Number(qty)) +"</strong>";
+            console.log(addHTML);
+            cart.insertBefore(addHTML, document.getElementById("checkOut"));
+            break;
+
+        case "addBlueBerries":
+            qty = document.getElementById("blueberryQty").value;
+            addHTML = document.createElement("p");
+            addHTML.className="orderedProducts";
+            addHTML.innerHTML = "BlueBerries: "+qty+" Price: <strong class='price'>"+(16.60*Number(qty)) +"</strong>";
+            console.log(addHTML);
+            cart.insertBefore(addHTML, document.getElementById("checkOut"));
+            break;
+
+        case "addMealworms":
+            qty = document.getElementById("mealwormsQty").value;
+            addHTML = document.createElement("p");
+            addHTML.className="orderedProducts";
+            addHTML.innerHTML = "MealWorms: "+qty+" Price: <strong class='price'>"+(30.00*Number(qty)) +"</strong>";
+            console.log(addHTML);
+            cart.insertBefore(addHTML, document.getElementById("checkOut"));
+            break;
+
+        case "addBlendbucket":
+            qty = document.getElementById("blendbucketQty").value;
+            addHTML = document.createElement("p");
+            addHTML.className="orderedProducts";
+            addHTML.innerHTML = "Blendbucket: "+qty+" Price: <strong class='price'>"+(30.00*Number(qty)) +"</strong>";
             console.log(addHTML);
             cart.insertBefore(addHTML, document.getElementById("checkOut"));
             break;
